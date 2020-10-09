@@ -1,0 +1,19 @@
+{
+  "name": "jeanmichelgerber_3_21092020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmgerber/JeanMichelGerber_3_21092020.git"
+  },
+  "author": "Jean-Michel GERBER",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmgerber/JeanMichelGerber_3_21092020/issues"
+  },
+  "homepage": "https://github.com/jmgerber/JeanMichelGerber_3_21092020#readme"
+}
