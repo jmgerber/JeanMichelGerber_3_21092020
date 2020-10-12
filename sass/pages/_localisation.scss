@@ -1,6 +1,6 @@
 .localisation{
     height: 50px;
-    background-color: #EAEAEA;
+    @include gray-background(4%);
     color: #373737;
     box-shadow: inset 0 5px 4px -2px #ccc;
     font-size: 1.1rem;

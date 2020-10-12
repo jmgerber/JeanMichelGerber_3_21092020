@@ -7,6 +7,7 @@
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    background: linear-gradient(170deg, $secondary-color, 55%, lighten($primary-color, 10%));
+    background: linear-gradient(170deg, $secondary-color, lighten($primary-color, 5%));
     @include shadow_box;
+    cursor: pointer;
 }
