@@ -28,6 +28,7 @@ h1, h2, h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   background: linear-gradient(170deg, #FF79DA, 55%, #ae80e5);
+  box-shadow: 0 3px 8px #ccc;
 }
 
 .header_homepage {
@@ -39,7 +40,7 @@ h1, h2, h3 {
 }
 
 .presentation {
-  padding: 40px 0 55px;
+  padding: 40px 25px 55px;
   background-color: #F5F5F5;
   text-align: center;
 }
@@ -48,6 +49,7 @@ h1, h2, h3 {
 }
 .presentation p {
   margin-bottom: 30px;
+  font-weight: 300;
 }
 
 .localisation {
@@ -62,6 +64,55 @@ h1, h2, h3 {
 }
 .localisation p {
   margin: auto;
+}
+
+.operation {
+  padding: 50px 20px 65px;
+}
+.operation h2 {
+  margin-bottom: 30px;
+}
+
+.step {
+  height: 72px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.step__number {
+  background-color: #9356DC;
+  height: 24px;
+  width: 24px;
+  color: #fff;
+  border-radius: 1rem;
+  z-index: 2;
+}
+.step__number span {
+  margin: auto;
+}
+.step__text {
+  position: relative;
+  left: -12px;
+  background-color: #F5F5F5;
+  border-radius: 1.1rem;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 3px 8px #ccc;
+}
+.step__text i {
+  width: 21px;
+  color: #7D7D7D;
+  margin: 0 25px 0 30px;
+  font-size: 1.2rem;
+}
+.step__text:hover {
+  background-color: #f4eefc;
+}
+.step__text:hover i {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
