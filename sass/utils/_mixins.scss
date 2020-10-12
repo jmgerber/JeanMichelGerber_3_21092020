@@ -1,0 +1,7 @@
+@mixin shadow_box {
+    box-shadow: 0 3px 8px #ccc;
+}
+
+@mixin gray-background($scale : 0%){
+    background-color: darken($gray-color, $scale);
+}

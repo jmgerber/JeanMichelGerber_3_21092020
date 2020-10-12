@@ -1,0 +1,12 @@
+.presentation{
+    padding: 40px 25px 55px;
+    @include gray-background;
+    text-align: center;
+    h2{
+        margin-bottom: 15px;
+    }
+    p{
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,19 @@
+footer{
+    @include gray-background(60%);
+    color: $white;
+    padding: 25px 25px 35px;
+    h3{
+        font-family: 'Shrikhand', cursive;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+
+    a{
+        color: white;
+        line-height: 1.8rem;
+        i{
+            width: 16px;
+            margin-right: 10px;
+        }
+    }
+}

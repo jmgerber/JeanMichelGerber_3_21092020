@@ -8,87 +8,113 @@
     <title>ohmyfood</title>
 </head>
 <body>
-    <header>
-        <img src="public/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood" class="logo">
-        <div class="presentation">
-            <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
-            <a href="#restaurants_anchor"><button class="btn">Explorer nos restaurants</button></a>
-        </div>
+    <!-- Header -->
+    <header class="header_homepage flex">
+        <img src="public/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
     </header>
+    <div class="localisation flex">
+        <p><i class="fas fa-map-marker-alt"></i>
+        Paris, Belleville</p>
+    </div>
+    <div class="presentation">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <a href="#restaurants_anchor"><button class="btn">Explorer nos restaurants</button></a>
+    </div>
+
+    <!-- Fonctionnement -->
     <section class="operation">
         <h2>Fonctionnement</h2>
-        <div class="step">
-            <div class="step__number">1</div>
-            <div class="step__text"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
+        <div class="step flex">
+            <div class="step__number flex"><span>1</span></div>
+            <div class="step__text flex"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
         </div>
 
-        <div class="step">
-            <div class="step__number">2</div>
-            <div class="step__text"><i class="fas fa-list-ul"></i>Composez votre menu</div>
+        <div class="step flex">
+            <div class="step__number flex"><span>2</span></div>
+            <div class="step__text flex"><i class="fas fa-list-ul"></i>Composez votre menu</div>
         </div>
 
-        <div class="step">
-            <div class="step__number">3</div>
-            <div class="step__text"><i class="fas fa-store"></i>Dégustez au restaurant</div>
+        <div class="step flex">
+            <div class="step__number flex"><span>3</span></div>
+            <div class="step__text flex"><i class="fas fa-store"></i>Dégustez au restaurant</div>
         </div>
     </section>
+    <!-- Restaurants -->
     <section class="restaurants">
         <h2 id="restaurants_anchor">Restaurants</h2>
         <div class="resto-prev">
-            <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-            <div class="resto-prev__description">
-                <div class="descriptionText">
-                    <p>La palette du goût</p>
+            <div class="resto-prev__image">
+                <a href="la_palette_du_gout.html">
+                    <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                    <div class="new">Nouveau</div>
+                </a>
+            </div>
+            <div class="resto-prev__description flex">
+                <div class="descriptionText flex">
+                    <p class="restaurantName">La palette du goût</p>
                     <p>Ménilmontant</p>
                 </div>
-                <div class="descriptionHeart">
+                <div class="descriptionHeart flex">
                     <i class="far fa-heart"></i>
                 </div>
             </div>
         </div>
 
         <div class="resto-prev">
-            <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-            <div class="resto-prev__description">
-                <div class="descriptionText">
-                    <p>La note enchantée</p>
+            <div class="resto-prev__image">
+                <a href="la_note_enchantee.html">
+                    <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                    <div class="new">Nouveau</div>
+                </a>
+            </div>
+            <div class="resto-prev__description flex">
+                <div class="descriptionText flex">
+                    <p class="restaurantName">La note enchantée</p>
                     <p>Charonne</p>
                 </div>
-                <div class="descriptionHeart">
+                <div class="descriptionHeart flex">
                     <i class="far fa-heart"></i>
                 </div>
             </div>
         </div>
 
         <div class="resto-prev">
-            <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-            <div class="resto-prev__description">
-                <div class="descriptionText">
-                    <p>À la française</p>
+            <div class="resto-prev__image">
+                <a href="a_la_francaise.html">
+                    <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                </a>
+            </div>
+            <div class="resto-prev__description flex">
+                <div class="descriptionText flex">
+                    <p class="restaurantName">À la française</p>
                     <p>Cité Rouge</p>
                 </div>
-                <div class="descriptionHeart">
+                <div class="descriptionHeart flex">
                     <i class="far fa-heart"></i>
                 </div>
             </div>
         </div>
 
         <div class="resto-prev">
-            <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Les délices des sens">
-            <div class="resto-prev__description">
-                <div class="descriptionText">
-                    <p>Les délices des sens</p>
+            <div class="resto-prev__image">
+                <a href="le_delice_des_sens.html">
+                    <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                </a>
+            </div>
+            <div class="resto-prev__description flex">
+                <div class="descriptionText flex">
+                    <p class="restaurantName">Le délice des sens</p>
                     <p>Folie-Méricourt</p>
                 </div>
-                <div class="descriptionHeart">
+                <div class="descriptionHeart flex">
                     <i class="far fa-heart"></i>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <h3>ohmyfood</h3>
         <ul>
