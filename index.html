@@ -8,15 +8,21 @@
     <title>ohmyfood</title>
 </head>
 <body>
-    <header>
-        <img src="public/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood" class="logo">
-        <div class="presentation">
-            <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
-            <a href="#restaurants_anchor"><button class="btn">Explorer nos restaurants</button></a>
-        </div>
+    <!-- Header -->
+    <header class="header_homepage flex">
+        <img src="public/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
     </header>
+    <div class="localisation flex">
+        <p><i class="fas fa-map-marker-alt"></i>
+        Paris, Belleville</p>
+    </div>
+    <div class="presentation">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
+        <a href="#restaurants_anchor"><button class="btn">Explorer nos restaurants</button></a>
+    </div>
+
+    <!-- Fonctionnement -->
     <section class="operation">
         <h2>Fonctionnement</h2>
         <div class="step">
@@ -34,6 +40,7 @@
             <div class="step__text"><i class="fas fa-store"></i>Dégustez au restaurant</div>
         </div>
     </section>
+    <!-- Restaurants -->
     <section class="restaurants">
         <h2 id="restaurants_anchor">Restaurants</h2>
         <div class="resto-prev">
@@ -89,6 +96,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <h3>ohmyfood</h3>
         <ul>
