@@ -1,5 +1,5 @@
 footer{
-    @include gray-background(60%);
+    background-color: $dark-gray;
     color: $white;
     padding: 25px 25px 35px;
     h3{

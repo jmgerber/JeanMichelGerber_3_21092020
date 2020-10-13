@@ -5,3 +5,25 @@
         width: 162px;
     }
 }
+
+.header_pages{
+    height: 62px;
+    align-items: center;
+    padding-right: 62px;
+    a{
+        width: 62px;
+        height: 100%;
+        color: $dark-gray;
+        i{
+            margin: auto;
+            font-size: 1.3rem;
+        }
+    }
+    h1{
+        flex: 1;
+        font-family: 'Shrikhand', cursive;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.9rem;
+    }
+}
