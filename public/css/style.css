@@ -32,11 +32,38 @@ h1, h2, h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   background: linear-gradient(170deg, #FF79DA, #a16be0);
-  box-shadow: 0 3px 8px #ccc;
+  box-shadow: 0 3px 8px #c2c2c2;
   cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(170deg, #ffa2e5, #a978e3);
+  box-shadow: 0 3px 8px darkgray;
+}
+
+.dishes {
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 14px;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px #c2c2c2;
+  padding: 14px 22px 14px 12px;
+}
+.dishes__text .dish_name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.dishes__text p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+.dishes__price {
+  align-self: flex-end;
+  color: #363636;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding-left: 15px;
 }
 
 .header_homepage {
@@ -47,8 +74,30 @@ h1, h2, h3 {
   width: 162px;
 }
 
+.header_pages {
+  height: 62px;
+  align-items: center;
+  padding-right: 62px;
+}
+.header_pages a {
+  width: 62px;
+  height: 100%;
+  color: #363636;
+}
+.header_pages a i {
+  margin: auto;
+  font-size: 1.3rem;
+}
+.header_pages h1 {
+  flex: 1;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+
 footer {
-  background-color: #5c5c5c;
+  background-color: #363636;
   color: #fff;
   padding: 25px 25px 35px;
 }
@@ -127,7 +176,7 @@ footer a i {
   align-items: center;
   font-size: 1rem;
   font-weight: 600;
-  box-shadow: 0 3px 8px #ccc;
+  box-shadow: 0 3px 8px #c2c2c2;
 }
 .step__text i {
   width: 21px;
@@ -156,7 +205,7 @@ footer a i {
   border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 20px;
-  box-shadow: 0 3px 8px #ccc;
+  box-shadow: 0 3px 8px #c2c2c2;
 }
 .resto-prev__image {
   height: 173px;
@@ -207,6 +256,55 @@ footer a i {
 .resto-prev__description .descriptionHeart i:hover {
   font-weight: 600;
   color: #9356DC;
+}
+
+.main {
+  background-color: #F5F5F5;
+}
+
+.restaurantPicture {
+  height: 250px;
+  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center;
+  background-size: cover;
+}
+
+.restaurant {
+  border-radius: 2rem 2rem 0 0;
+  padding: 40px 14px 40px;
+  background-color: #F5F5F5;
+  position: relative;
+  bottom: 30px;
+}
+.restaurant h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.restaurant h3 {
+  margin: 35px 0 0 6px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.restaurant hr {
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  border: none;
+  margin: 5px 0 0 6px;
+}
+.restaurant_name {
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant_name i {
+  font-size: 1.6rem;
+  margin-right: 20px;
+}
+.restaurant .btn {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

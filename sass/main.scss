@@ -1,16 +1,18 @@
-@import "utils/variables.scss";
-@import "utils/functions.scss";
-@import "utils/mixins.scss";
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
 
-@import "base/base.scss";
-@import "base/typography.scss";
+@import "base/base";
+@import "base/typography";
 
-@import "components/buttons.scss";
+@import "components/buttons";
+@import "components/dishes_frame";
 
-@import "layouts/header.scss";
-@import "layouts/footer.scss";
+@import "layouts/header";
+@import "layouts/footer";
 
-@import "pages/presentation.scss";
-@import "pages/localisation.scss";
-@import "pages/fonctionnement.scss";
-@import "pages/liste-restaurants.scss";
+@import "pages/presentation";
+@import "pages/localisation";
+@import "pages/fonctionnement";
+@import "pages/liste-restaurants";
+@import "pages/cartes-restaurants";

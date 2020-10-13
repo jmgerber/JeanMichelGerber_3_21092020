@@ -12,5 +12,6 @@
     cursor: pointer;
     &:hover{
         background: linear-gradient(170deg, lighten($secondary-color, 8%), lighten($primary-color, 8%));
+        @include shadow_box(darken($gray-color, 30%));
     }
 }

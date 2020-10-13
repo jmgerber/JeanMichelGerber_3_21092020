@@ -1,0 +1,27 @@
+.dishes{
+    justify-content: space-between;
+    background-color: $white;
+    margin-top: 14px;
+    border-radius: 1rem;
+    @include shadow_box;
+    padding: 14px 22px 14px 12px;
+    &__text{
+        .dish_name{
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        p{
+            margin: 0;
+            font-weight: 300;
+            font-size: 0.95rem;
+        }
+    }
+    &__price{
+        align-self: flex-end;
+        color: $dark-gray;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding-left: 15px;
+    }
+}
