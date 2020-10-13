@@ -35,6 +35,9 @@ h1, h2, h3 {
   box-shadow: 0 3px 8px #ccc;
   cursor: pointer;
 }
+.btn:hover {
+  background: linear-gradient(170deg, #ffa2e5, #a978e3);
+}
 
 .header_homepage {
   height: 62px;
@@ -191,6 +194,7 @@ footer a i {
 }
 .resto-prev__description .descriptionText p {
   margin: 0;
+  font-weight: 300;
 }
 .resto-prev__description .descriptionHeart {
   width: 77px;
