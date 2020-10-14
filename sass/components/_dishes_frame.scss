@@ -12,7 +12,7 @@
         transform: scaleX(1);
         transform-origin: left;
         @include transition-timing-check(width);
-        padding: 15px 0 15px 12px;
+        padding: 13px 0 13px 12px;
         justify-content: space-between;
         .dish_name{
             font-weight: 600;
