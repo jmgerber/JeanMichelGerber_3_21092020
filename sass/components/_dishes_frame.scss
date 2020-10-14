@@ -3,25 +3,75 @@
     background-color: $white;
     margin-top: 14px;
     border-radius: 1rem;
+    overflow: hidden;
     @include shadow_box;
-    padding: 14px 22px 14px 12px;
+    padding: 0;
+    position: relative;
     &__text{
+        width: 80%;
+        transform: scaleX(1);
+        transform-origin: left;
+        @include transition-timing-check(width);
+        padding: 15px 0 15px 12px;
+        justify-content: space-between;
         .dish_name{
             font-weight: 600;
             font-size: 1.1rem;
             margin-bottom: 5px;
+            white-space: nowrap;
         }
         p{
             margin: 0;
             font-weight: 300;
             font-size: 0.95rem;
+            text-overflow: ellipsis;
         }
     }
     &__price{
         align-self: flex-end;
         color: $dark-gray;
-        font-weight: 600;
-        font-size: 0.9rem;
-        padding-left: 15px;
+        font-weight: 700;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        transform-origin: right;
+        @include transition-timing-check(transform);
+    }
+    .check__animation{
+        display: flex;
+        background-color: $tertiary-color;
+        width: $check-animation-width;
+        transform-origin: right;
+        transform: scaleX(0);
+        @include transition-timing-check(transform);
+        .anim_icon{
+            color: $white;
+            font-size: 1.6rem;
+            margin: auto;
+            transform: rotate(0deg);
+            @include transition-timing-check(transform);
+        }
+    }
+
+    /* Animations */
+    &:hover{
+        cursor: pointer;
+    }
+    &:hover .dishes__text{
+        width: 60%;
+        .dish_name, p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    &:hover .check__animation{
+        transform: scaleX(1);
+    }
+    &:hover .anim_icon{
+        transform: rotate(360deg);
+    }
+    &:hover .dishes__price{
+        transform: translateX(-$check-animation-width);
     }
 }

@@ -11,8 +11,7 @@
     border-radius: 2rem 2rem 0 0;
     padding: 40px 14px 40px;
     background-color: $gray-color;
-    position: relative;
-    bottom: 30px;
+    transform: translateY(-30px);
     h2{
         font-family: 'Shrikhand', cursive;
         font-size: 1.7rem;

@@ -45,25 +45,76 @@ h1, h2, h3 {
   background-color: #fff;
   margin-top: 14px;
   border-radius: 1rem;
+  overflow: hidden;
   box-shadow: 0 3px 8px #c2c2c2;
-  padding: 14px 22px 14px 12px;
+  padding: 0;
+  position: relative;
+  /* Animations */
+}
+.dishes__text {
+  width: 80%;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: width 300ms 100ms linear;
+  padding: 15px 0 15px 12px;
+  justify-content: space-between;
 }
 .dishes__text .dish_name {
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 5px;
+  white-space: nowrap;
 }
 .dishes__text p {
   margin: 0;
   font-weight: 300;
   font-size: 0.95rem;
+  text-overflow: ellipsis;
 }
 .dishes__price {
   align-self: flex-end;
   color: #363636;
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding-left: 15px;
+  font-weight: 700;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  transform-origin: right;
+  transition: transform 300ms 100ms linear;
+}
+.dishes .check__animation {
+  display: flex;
+  background-color: #99E2D0;
+  width: 72px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 300ms 100ms linear;
+}
+.dishes .check__animation .anim_icon {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: auto;
+  transform: rotate(0deg);
+  transition: transform 300ms 100ms linear;
+}
+.dishes:hover {
+  cursor: pointer;
+}
+.dishes:hover .dishes__text {
+  width: 60%;
+}
+.dishes:hover .dishes__text .dish_name, .dishes:hover .dishes__text p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.dishes:hover .check__animation {
+  transform: scaleX(1);
+}
+.dishes:hover .anim_icon {
+  transform: rotate(360deg);
+}
+.dishes:hover .dishes__price {
+  transform: translateX(-72px);
 }
 
 .header_homepage {
@@ -272,8 +323,7 @@ footer a i {
   border-radius: 2rem 2rem 0 0;
   padding: 40px 14px 40px;
   background-color: #F5F5F5;
-  position: relative;
-  bottom: 30px;
+  transform: translateY(-30px);
 }
 .restaurant h2 {
   font-family: "Shrikhand", cursive;
