@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 .btn {
   height: 50px;
-  width: 217px;
+  padding: 0 49px;
   border-radius: 1.5rem;
   border: none;
   color: #fff;
@@ -34,6 +34,9 @@ h1, h2, h3 {
   background: linear-gradient(170deg, #FF79DA, #a16be0);
   box-shadow: 0 3px 8px #c2c2c2;
   cursor: pointer;
+}
+.btn--explore {
+  padding: 0 22px;
 }
 .btn:hover {
   background: linear-gradient(170deg, #ffa2e5, #a978e3);
@@ -45,25 +48,76 @@ h1, h2, h3 {
   background-color: #fff;
   margin-top: 14px;
   border-radius: 1rem;
+  overflow: hidden;
   box-shadow: 0 3px 8px #c2c2c2;
-  padding: 14px 22px 14px 12px;
+  padding: 0;
+  position: relative;
+  /* Animations */
+}
+.dishes__text {
+  width: 80%;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: width 300ms 100ms linear;
+  padding: 13px 0 13px 12px;
+  justify-content: space-between;
 }
 .dishes__text .dish_name {
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 5px;
+  white-space: nowrap;
 }
 .dishes__text p {
   margin: 0;
   font-weight: 300;
   font-size: 0.95rem;
+  text-overflow: ellipsis;
 }
 .dishes__price {
   align-self: flex-end;
   color: #363636;
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding-left: 15px;
+  font-weight: 700;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  transform-origin: right;
+  transition: transform 300ms 100ms linear;
+}
+.dishes .check__animation {
+  display: flex;
+  background-color: #99E2D0;
+  width: 72px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 300ms 100ms linear;
+}
+.dishes .check__animation .anim_icon {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: auto;
+  transform: rotate(0deg);
+  transition: transform 300ms 100ms linear;
+}
+.dishes:hover {
+  cursor: pointer;
+}
+.dishes:hover .dishes__text {
+  width: 60%;
+}
+.dishes:hover .dishes__text .dish_name, .dishes:hover .dishes__text p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.dishes:hover .check__animation {
+  transform: scaleX(1);
+}
+.dishes:hover .anim_icon {
+  transform: rotate(360deg);
+}
+.dishes:hover .dishes__price {
+  transform: translateX(-72px);
 }
 
 .header_homepage {
@@ -99,19 +153,21 @@ h1, h2, h3 {
 footer {
   background-color: #363636;
   color: #fff;
-  padding: 25px 25px 35px;
+  padding: 20px 25px 30px;
 }
 footer h3 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
+  font-size: 1.1rem;
 }
 footer a {
   color: white;
-  line-height: 1.8rem;
+  line-height: 1.7rem;
 }
 footer a i {
-  width: 16px;
+  font-size: 0.8rem;
+  width: 9px;
   margin-right: 10px;
 }
 
@@ -196,7 +252,7 @@ footer a i {
   background-color: whitesmoke;
 }
 .restaurants h2 {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .resto-prev {
@@ -204,7 +260,7 @@ footer a i {
   height: 250px;
   border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   box-shadow: 0 3px 8px #c2c2c2;
 }
 .resto-prev__image {
@@ -212,19 +268,20 @@ footer a i {
   position: relative;
 }
 .resto-prev__image img {
-  height: 177px;
+  height: 173px;
   width: 100%;
   object-fit: cover;
 }
 .resto-prev__image .new {
   position: absolute;
-  right: 10px;
+  right: 12px;
   top: 13px;
   background-color: #99E2D0;
   color: #32b091;
-  padding: 9px 12px;
-  border-radius: 2px;
-  font-weight: 600;
+  padding: 6px 11px;
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 .resto-prev__description {
   height: 77px;
@@ -232,24 +289,26 @@ footer a i {
 }
 .resto-prev__description .descriptionText {
   flex: 1;
-  padding-left: 12px;
+  padding-left: 13px;
   flex-direction: column;
   justify-content: center;
   font-size: 1.1rem;
 }
 .resto-prev__description .descriptionText .restaurantName {
+  margin: 0;
   font-weight: 700;
   margin-bottom: 5px;
 }
-.resto-prev__description .descriptionText p {
+.resto-prev__description .descriptionText .restaurantName + p {
   margin: 0;
   font-weight: 300;
+  font-size: 1rem;
 }
 .resto-prev__description .descriptionHeart {
   width: 77px;
 }
 .resto-prev__description .descriptionHeart i {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: auto;
   cursor: pointer;
 }
@@ -270,18 +329,17 @@ footer a i {
 
 .restaurant {
   border-radius: 2rem 2rem 0 0;
-  padding: 40px 14px 40px;
+  padding: 30px 14px 40px;
   background-color: #F5F5F5;
-  position: relative;
-  bottom: 30px;
+  transform: translateY(-30px);
 }
 .restaurant h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 .restaurant h3 {
-  margin: 35px 0 0 6px;
+  margin: 30px 0 0 6px;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -295,10 +353,10 @@ footer a i {
 }
 .restaurant_name {
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .restaurant_name i {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-right: 20px;
 }
 .restaurant .btn {
