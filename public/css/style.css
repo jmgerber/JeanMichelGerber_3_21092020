@@ -307,14 +307,30 @@ footer a i {
 .resto-prev__description .descriptionHeart {
   width: 77px;
 }
-.resto-prev__description .descriptionHeart i {
+.resto-prev__description .descriptionHeart .emptyHeart {
   font-size: 1.7rem;
-  margin: auto;
   cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
 }
-.resto-prev__description .descriptionHeart i:hover {
-  font-weight: 600;
-  color: #9356DC;
+.resto-prev__description .descriptionHeart .emptyHeart:hover {
+  color: transparent;
+}
+.resto-prev__description .descriptionHeart .emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+.resto-prev__description .descriptionHeart .fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+.resto-prev__description .descriptionHeart .emptyHeart {
+  margin: auto;
 }
 
 .main {
@@ -354,10 +370,29 @@ footer a i {
 .restaurant_name {
   justify-content: space-between;
   align-items: baseline;
-}
-.restaurant_name i {
-  font-size: 1.8rem;
   margin-right: 20px;
+}
+.restaurant_name .emptyHeart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.restaurant_name .emptyHeart:hover {
+  color: transparent;
+}
+.restaurant_name .emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+.restaurant_name .fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
 }
 .restaurant .btn {
   display: block;

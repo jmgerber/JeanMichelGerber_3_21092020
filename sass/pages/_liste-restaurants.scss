@@ -54,14 +54,9 @@
         }
         .descriptionHeart{
             width: 77px;
-            i{
-                font-size: 1.7rem;
+            @include heart-transition;
+            .emptyHeart{
                 margin: auto;
-                cursor: pointer;
-                &:hover{
-                    font-weight: 600;
-                    color: $primary-color;
-                }
             }
         }
     }
