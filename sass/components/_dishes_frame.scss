@@ -7,6 +7,7 @@
     @include shadow_box;
     padding: 0;
     position: relative;
+    opacity: 0;
     &__text{
         width: 80%;
         transform: scaleX(1);
@@ -53,7 +54,7 @@
         }
     }
 
-    /* Animations */
+    /* Animation Check */
     &:hover{
         cursor: pointer;
     }
@@ -73,5 +74,25 @@
     }
     &:hover .dishes__price{
         transform: translateX(-$check-animation-width);
+    }
+
+    /* Animation menu-load */
+
+    @keyframes menu-load{
+        0% {
+            transform: translateY(20px);
+        }
+        75%{
+            opacity: 0.5;
+        }
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
+    @for $i from 1 through ($max-dishes+1){
+        &:nth-of-type(#{$i}){
+            animation: menu-load 800ms $menu-appear-delay*$i forwards;
+        }
     }
 }

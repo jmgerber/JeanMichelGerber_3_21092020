@@ -88,7 +88,9 @@ h1, h2, h3 {
   box-shadow: 0 3px 8px #c2c2c2;
   padding: 0;
   position: relative;
-  /* Animations */
+  opacity: 0;
+  /* Animation Check */
+  /* Animation menu-load */
 }
 .dishes__text {
   width: 80%;
@@ -154,6 +156,51 @@ h1, h2, h3 {
 }
 .dishes:hover .dishes__price {
   transform: translateX(-72px);
+}
+@keyframes menu-load {
+  0% {
+    transform: translateY(20px);
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.dishes:nth-of-type(1) {
+  animation: menu-load 800ms 150ms forwards;
+}
+.dishes:nth-of-type(2) {
+  animation: menu-load 800ms 300ms forwards;
+}
+.dishes:nth-of-type(3) {
+  animation: menu-load 800ms 450ms forwards;
+}
+.dishes:nth-of-type(4) {
+  animation: menu-load 800ms 600ms forwards;
+}
+.dishes:nth-of-type(5) {
+  animation: menu-load 800ms 750ms forwards;
+}
+.dishes:nth-of-type(6) {
+  animation: menu-load 800ms 900ms forwards;
+}
+.dishes:nth-of-type(7) {
+  animation: menu-load 800ms 1050ms forwards;
+}
+.dishes:nth-of-type(8) {
+  animation: menu-load 800ms 1200ms forwards;
+}
+.dishes:nth-of-type(9) {
+  animation: menu-load 800ms 1350ms forwards;
+}
+.dishes:nth-of-type(10) {
+  animation: menu-load 800ms 1500ms forwards;
+}
+.dishes:nth-of-type(11) {
+  animation: menu-load 800ms 1650ms forwards;
 }
 
 .header_homepage {
