@@ -71,6 +71,9 @@ h1, h2, h3 {
   box-shadow: 0 3px 8px #c2c2c2;
   cursor: pointer;
 }
+.btn a {
+  color: #fff;
+}
 .btn--explore {
   padding: 0 22px;
 }
@@ -422,8 +425,18 @@ footer a i {
 
 .restaurantPicture {
   height: 250px;
-  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center;
-  background-size: cover;
+}
+.restaurantPicture.palette_du_gout {
+  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
+}
+.restaurantPicture.note_enchantee {
+  background: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") center/cover;
+}
+.restaurantPicture.a_la_francaise {
+  background: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center/cover;
+}
+.restaurantPicture.delice_des_sens {
+  background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
 }
 
 .restaurant {
