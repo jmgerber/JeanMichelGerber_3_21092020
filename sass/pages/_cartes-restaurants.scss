@@ -4,9 +4,20 @@
 
 .restaurantPicture{
     height: 250px;
-    background: url('../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg') center;
-    background-size: cover;
+    &.palette_du_gout{
+        @include restaurant-bg-picture(palette-du-gout);
+    }
+    &.note_enchantee{
+        @include restaurant-bg-picture(note-enchantee);
+    }
+    &.a_la_francaise{
+        @include restaurant-bg-picture(a-la-francaise);
+    }
+    &.delice_des_sens{
+        @include restaurant-bg-picture(delice-des-sens);
+    }
 }
+
 .restaurant{
     border-radius: 2rem 2rem 0 0;
     padding: 30px 14px 40px;
