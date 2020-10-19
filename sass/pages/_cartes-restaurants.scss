@@ -33,13 +33,14 @@
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 300;
-    }
-    hr{
-        height: 3px;
-        width: 40px;
-        background-color: $tertiary-color;
-        border: none;
-        margin: 5px 0 0 6px;
+        &::after{
+            content: "";
+            display: block;
+            height: 3px;
+            width: 40px;
+            background-color: $tertiary-color;
+            margin-top: 5px;
+        }
     }
     &_name{
         justify-content: space-between;
