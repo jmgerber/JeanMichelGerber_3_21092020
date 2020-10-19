@@ -34,3 +34,7 @@
         transition: transform 150ms 50ms ease-in-out;
     }
 }
+
+@mixin restaurant-bg-picture($resto) {
+    background: url('../images/restaurants/#{map-get($images-resto, $resto)}') center/cover;
+}
