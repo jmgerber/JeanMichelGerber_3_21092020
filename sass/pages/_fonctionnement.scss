@@ -3,6 +3,37 @@
     h2{
         margin-bottom: 30px;
     }
+
+    @include breakpoints(tablet){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 45px;
+        h2{
+            font-size: 1.9rem;
+            &::before, &::after{
+                content: "";
+                display: inline-block;
+                background-color: $primary-color;
+                height: 2px;
+                width: 75px;
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.operations-tab{
+    width: 100%;
+    @include breakpoints(tablet){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include breakpoints(desktop){
+        flex-direction: row;
+    }
 }
 
 .step{
@@ -18,6 +49,7 @@
         color: $white;
         border-radius: 1rem;
         z-index: 2;
+        font-size: .9rem;
         span{
             margin: auto;
         }
@@ -44,6 +76,18 @@
             background-color: lighten($primary-color, 36%);
             i{
                 color: $primary-color;
+            }
+        }
+    }
+    @include breakpoints(tablet){
+        width: 80%;
+        &__number{
+            font-size: 1.1rem;
+        }
+        &__text{
+            font-size: 1.2rem;
+            i{
+                font-size: 1.4rem;
             }
         }
     }

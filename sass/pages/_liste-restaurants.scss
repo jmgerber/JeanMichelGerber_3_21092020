@@ -1,10 +1,35 @@
 .restaurants{
-    padding: 55px 20px 60px;
+    padding: 55px 20px 45px;
     @include gray-background;
     h2{
         margin-bottom: 22px;
     }
+    @include breakpoints(tablet){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .restaurants-tab{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        h2{
+            font-size: 1.9rem;
+            margin-bottom: 30px;
+            &::before, &::after{
+                content: "";
+                display: inline-block;
+                background-color: $primary-color;
+                height: 2px;
+                width: 75px;
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+        }
+    }
 }
+
 .resto-prev{
     box-sizing: border-box;
     height: 250px;
@@ -13,10 +38,10 @@
     margin-bottom: 18px;
     @include shadow_box;
     &__image{
-        height: 173px;
+        height: 70%;
         position: relative;
         img{
-            height: 173px;
+            height: 100%;
             width: 100%;
             object-fit: cover;
         }
@@ -29,11 +54,11 @@
             padding: 6px 11px;
             border-radius: 1px;
             font-weight: 500;
-            font-size: 0.9rem;
+            font-size: .9rem;
         }
     }
     &__description{
-        height: 77px;
+        height: 30%;
         background-color: $white;
         .descriptionText{
             flex: 1;
@@ -58,6 +83,18 @@
             .emptyHeart{
                 margin: auto;
             }
+        }
+    }
+    @include breakpoints(tablet){
+        width: 48%;
+    }
+    @include breakpoints(desktop){
+        height: 350px;
+        &__image{
+            height: 75%;
+        }
+        &__description{
+            height: 25%;
         }
     }
 }
