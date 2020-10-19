@@ -38,3 +38,9 @@
 @mixin restaurant-bg-picture($resto) {
     background: url('../images/restaurants/#{map-get($images-resto, $resto)}') center/cover;
 }
+
+@mixin breakpoints($min-device) {
+    @media screen and (min-width: map-get($breakpoints-map, $min-device)){
+        @content;
+    }
+}

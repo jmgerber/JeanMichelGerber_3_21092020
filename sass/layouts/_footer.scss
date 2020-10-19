@@ -13,9 +13,20 @@ footer{
         color: white;
         line-height: 1.7rem;
         i{
-            font-size: 0.8rem;
+            font-size: .8rem;
             width: 9px;
             margin-right: 10px;
+        }
+    }
+    @include breakpoints(tablet){
+        h3{
+            font-size: 1.3rem;
+        }
+        a{
+            font-size: 1.1rem;
+            i{
+                font-size: 1rem;
+            }
         }
     }
 }

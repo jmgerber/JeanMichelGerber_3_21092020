@@ -1,7 +1,36 @@
 .operation{
     padding: 50px 20px 65px;
+    @include breakpoints(tablet){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 1.9rem;
+            &::before, &::after{
+                content: "";
+                display: inline-block;
+                background-color: $primary-color;
+                height: 2px;
+                width: 75px;
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+        }
+    }
     h2{
         margin-bottom: 30px;
+    }
+}
+
+.operations-tab{
+    width: 100%;
+    @include breakpoints(tablet){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include breakpoints(desktop){
+        flex-direction: row;
     }
 }
 
@@ -44,6 +73,18 @@
             background-color: lighten($primary-color, 36%);
             i{
                 color: $primary-color;
+            }
+        }
+    }
+    @include breakpoints(tablet){
+        width: 80%;
+        &__number{
+            font-size: 1.1rem;
+        }
+        &__text{
+            font-size: 1.2rem;
+            i{
+                font-size: 1.4rem;
             }
         }
     }

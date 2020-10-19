@@ -83,6 +83,11 @@ h1, h2, h3 {
   background: linear-gradient(170deg, #ffa2e5, #a978e3);
   box-shadow: 0 3px 8px darkgray;
 }
+@media screen and (min-width: 600px) {
+  .btn {
+    transform: scale(1.1);
+  }
+}
 
 .dishes {
   justify-content: space-between;
@@ -215,6 +220,11 @@ h1, h2, h3 {
   margin: auto;
   width: 162px;
 }
+@media screen and (min-width: 600px) {
+  .header_homepage img {
+    width: 210px;
+  }
+}
 
 .header_pages {
   height: 62px;
@@ -237,6 +247,11 @@ h1, h2, h3 {
   font-weight: 500;
   font-size: 1.9rem;
 }
+@media screen and (min-width: 600px) {
+  .header_pages h1 {
+    font-size: 2.4rem;
+  }
+}
 
 footer {
   background-color: #363636;
@@ -258,6 +273,17 @@ footer a i {
   width: 9px;
   margin-right: 10px;
 }
+@media screen and (min-width: 600px) {
+  footer h3 {
+    font-size: 1.3rem;
+  }
+  footer a {
+    font-size: 1.1rem;
+  }
+  footer a i {
+    font-size: 1rem;
+  }
+}
 
 .presentation {
   padding: 40px 25px 55px;
@@ -270,6 +296,11 @@ footer a i {
 .presentation p {
   margin-bottom: 30px;
   font-weight: 300;
+}
+@media screen and (min-width: 600px) {
+  .presentation {
+    font-size: 1.2rem;
+  }
 }
 
 .localisation {
@@ -285,12 +316,52 @@ footer a i {
 .localisation p {
   margin: auto;
 }
+@media screen and (min-width: 600px) {
+  .localisation {
+    font-size: 1.3rem;
+  }
+}
 
 .operation {
   padding: 50px 20px 65px;
 }
+@media screen and (min-width: 600px) {
+  .operation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .operation h2 {
+    font-size: 1.9rem;
+  }
+  .operation h2::before, .operation h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #9356DC;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
 .operation h2 {
   margin-bottom: 30px;
+}
+
+.operations-tab {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .operations-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .operations-tab {
+    flex-direction: row;
+  }
 }
 
 .step {
@@ -334,6 +405,20 @@ footer a i {
 .step__text:hover i {
   color: #9356DC;
 }
+@media screen and (min-width: 600px) {
+  .step {
+    width: 80%;
+  }
+  .step__number {
+    font-size: 1.1rem;
+  }
+  .step__text {
+    font-size: 1.2rem;
+  }
+  .step__text i {
+    font-size: 1.4rem;
+  }
+}
 
 .restaurants {
   padding: 55px 20px 60px;
@@ -341,6 +426,32 @@ footer a i {
 }
 .restaurants h2 {
   margin-bottom: 22px;
+}
+@media screen and (min-width: 600px) {
+  .restaurants {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .restaurants h2 {
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+  }
+  .restaurants h2::before, .restaurants h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #9356DC;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
+
+.restaurants-tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .resto-prev {
@@ -352,11 +463,11 @@ footer a i {
   box-shadow: 0 3px 8px #c2c2c2;
 }
 .resto-prev__image {
-  height: 173px;
+  height: 70%;
   position: relative;
 }
 .resto-prev__image img {
-  height: 173px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -372,7 +483,7 @@ footer a i {
   font-size: 0.9rem;
 }
 .resto-prev__description {
-  height: 77px;
+  height: 30%;
   background-color: #fff;
 }
 .resto-prev__description .descriptionText {
@@ -419,6 +530,22 @@ footer a i {
 }
 .resto-prev__description .descriptionHeart .emptyHeart {
   margin: auto;
+}
+@media screen and (min-width: 600px) {
+  .resto-prev {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .resto-prev {
+    height: 350px;
+  }
+  .resto-prev__image {
+    height: 75%;
+  }
+  .resto-prev__description {
+    height: 25%;
+  }
 }
 
 .main {
@@ -497,6 +624,19 @@ footer a i {
   display: block;
   margin: auto;
   margin-top: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurant .restaurant_name {
+    width: 100%;
+  }
+  .restaurant .sub-menu {
+    width: 32%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
