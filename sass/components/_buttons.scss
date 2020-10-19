@@ -1,4 +1,6 @@
 .btn{
+    box-sizing: border-box;
+    display: inline-block;
     height: 50px;
     padding: 0 49px;
     border-radius: 1.5rem;
@@ -14,7 +16,7 @@
         color: $white;
     }
     &--explore{
-        padding: 0 22px;
+        padding: 15px 22px;
     }
     &:hover{
         background: linear-gradient(170deg, lighten($secondary-color, 8%), lighten($primary-color, 8%));
