@@ -3,6 +3,9 @@
     img{
         margin: auto;
         width: 162px;
+        @include breakpoints(tablet){
+            width: 210px;
+        }
     }
 }
 
@@ -25,5 +28,8 @@
         text-align: center;
         font-weight: 500;
         font-size: 1.9rem;
+        @include breakpoints(tablet){
+            font-size: 2.4rem;
+        }
     }
 }
