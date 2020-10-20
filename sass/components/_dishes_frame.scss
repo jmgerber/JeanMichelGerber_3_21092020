@@ -1,4 +1,5 @@
 .dishes{
+    display: flex;
     justify-content: space-between;
     background-color: $white;
     margin-top: 14px;
@@ -12,7 +13,7 @@
         width: 80%;
         transform: scaleX(1);
         transform-origin: left;
-        @include transition-timing-check(width);
+        @include check-transition-timing(width);
         padding: 13px 0 13px 12px;
         justify-content: space-between;
         .dish_name{
@@ -36,25 +37,23 @@
         right: 15px;
         bottom: 15px;
         transform-origin: right;
-        @include transition-timing-check(transform);
+        @include check-transition-timing(transform);
     }
     .check__animation{
         display: flex;
         background-color: $tertiary-color;
-        width: $check-animation-width;
+        width: $check-transition-width;
         transform-origin: right;
         transform: scaleX(0);
-        @include transition-timing-check(transform);
+        @include check-transition-timing(transform);
         .anim_icon{
             color: $white;
             font-size: 1.6rem;
             margin: auto;
             transform: rotate(0deg);
-            @include transition-timing-check(transform);
+            @include check-transition-timing(transform);
         }
     }
-
-    /* Animation Check */
     &:hover{
         cursor: pointer;
     }
@@ -73,10 +72,8 @@
         transform: rotate(360deg);
     }
     &:hover .dishes__price{
-        transform: translateX(-$check-animation-width);
+        transform: translateX(-$check-transition-width);
     }
-
-    /* Animation menu-load */
 
     @keyframes menu-load{
         0% {
@@ -90,7 +87,7 @@
             opacity: 1;
         }
     }
-    @for $i from 1 through ($max-dishes+1){
+    @for $i from 1 through ($max-dishes){
         &:nth-of-type(#{$i}){
             animation: menu-load 800ms $menu-appear-delay*$i forwards;
         }

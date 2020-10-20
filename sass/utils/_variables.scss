@@ -5,9 +5,9 @@ $gray-color:#F5F5F5;
 $dark-gray: darken($gray-color, 75%);
 $white:#fff;
 
-$check-animation-width: 72px;
-$menu-appear-delay: 150ms;
-$max-dishes: 10;
+$check-transition-width: 72px;
+$menu-appear-delay: 200ms;
+$max-dishes: 4;
 
 $images-resto:(
     palette-du-gout: 'jay-wennington-N_Y88TWmGwA-unsplash.jpg',

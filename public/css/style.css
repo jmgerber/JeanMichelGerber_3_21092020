@@ -22,7 +22,6 @@ h1, h2, h3 {
   display: flex;
 }
 
-/* Animation load-spinner */
 .page_loader {
   display: flex;
   position: fixed;
@@ -90,6 +89,7 @@ h1, h2, h3 {
 }
 
 .dishes {
+  display: flex;
   justify-content: space-between;
   background-color: #fff;
   margin-top: 14px;
@@ -99,8 +99,6 @@ h1, h2, h3 {
   padding: 0;
   position: relative;
   opacity: 0;
-  /* Animation Check */
-  /* Animation menu-load */
 }
 .dishes__text {
   width: 80%;
@@ -180,37 +178,16 @@ h1, h2, h3 {
   }
 }
 .dishes:nth-of-type(1) {
-  animation: menu-load 800ms 150ms forwards;
+  animation: menu-load 800ms 200ms forwards;
 }
 .dishes:nth-of-type(2) {
-  animation: menu-load 800ms 300ms forwards;
+  animation: menu-load 800ms 400ms forwards;
 }
 .dishes:nth-of-type(3) {
-  animation: menu-load 800ms 450ms forwards;
-}
-.dishes:nth-of-type(4) {
   animation: menu-load 800ms 600ms forwards;
 }
-.dishes:nth-of-type(5) {
-  animation: menu-load 800ms 750ms forwards;
-}
-.dishes:nth-of-type(6) {
-  animation: menu-load 800ms 900ms forwards;
-}
-.dishes:nth-of-type(7) {
-  animation: menu-load 800ms 1050ms forwards;
-}
-.dishes:nth-of-type(8) {
-  animation: menu-load 800ms 1200ms forwards;
-}
-.dishes:nth-of-type(9) {
-  animation: menu-load 800ms 1350ms forwards;
-}
-.dishes:nth-of-type(10) {
-  animation: menu-load 800ms 1500ms forwards;
-}
-.dishes:nth-of-type(11) {
-  animation: menu-load 800ms 1650ms forwards;
+.dishes:nth-of-type(4) {
+  animation: menu-load 800ms 800ms forwards;
 }
 
 .header_homepage {
@@ -297,11 +274,6 @@ footer a i {
   margin-bottom: 30px;
   font-weight: 300;
   font-size: 1.1rem;
-}
-@media screen and (min-width: 600px) {
-  .presentation {
-    font-size: 1.2rem;
-  }
 }
 @media screen and (min-width: 600px) {
   .presentation {
