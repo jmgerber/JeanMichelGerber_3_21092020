@@ -260,12 +260,12 @@ footer {
 }
 footer h3 {
   font-family: "Shrikhand", cursive;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 13px;
   font-size: 1.1rem;
 }
 footer a {
-  color: white;
+  color: #fff;
   line-height: 1.7rem;
 }
 footer a i {
@@ -296,6 +296,12 @@ footer a i {
 .presentation p {
   margin-bottom: 30px;
   font-weight: 300;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 600px) {
+  .presentation {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 600px) {
   .presentation {
@@ -308,7 +314,6 @@ footer a i {
   background-color: #ebebeb;
   color: #373737;
   box-shadow: inset 0 5px 4px -2px #ccc;
-  font-size: 1.1rem;
 }
 .localisation i {
   margin-right: 15px;
@@ -318,7 +323,7 @@ footer a i {
 }
 @media screen and (min-width: 600px) {
   .localisation {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -346,6 +351,42 @@ footer a i {
 }
 .operation h2 {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .operation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 45px;
+  }
+  .operation h2 {
+    font-size: 1.9rem;
+  }
+  .operation h2::before, .operation h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #9356DC;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
+
+.operations-tab {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .operations-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .operations-tab {
+    flex-direction: row;
+  }
 }
 
 .operations-tab {
@@ -377,6 +418,7 @@ footer a i {
   color: #fff;
   border-radius: 1rem;
   z-index: 2;
+  font-size: 0.9rem;
 }
 .step__number span {
   margin: auto;
@@ -421,7 +463,7 @@ footer a i {
 }
 
 .restaurants {
-  padding: 55px 20px 60px;
+  padding: 55px 20px 45px;
   background-color: whitesmoke;
 }
 .restaurants h2 {
@@ -432,6 +474,12 @@ footer a i {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  .restaurants .restaurants-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
   .restaurants h2 {
     font-size: 1.9rem;
@@ -446,12 +494,6 @@ footer a i {
     vertical-align: middle;
     margin: 0 10px;
   }
-}
-
-.restaurants-tab {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .resto-prev {
@@ -556,16 +598,16 @@ footer a i {
   height: 250px;
 }
 .restaurantPicture.palette_du_gout {
-  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
+  background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
 }
 .restaurantPicture.note_enchantee {
-  background: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") center/cover;
+  background: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") center/cover;
 }
 .restaurantPicture.a_la_francaise {
-  background: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center/cover;
+  background: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center/cover;
 }
 .restaurantPicture.delice_des_sens {
-  background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
+  background: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
 }
 
 .restaurant {

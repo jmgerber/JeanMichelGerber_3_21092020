@@ -8,6 +8,10 @@
     p{
         margin-bottom: 30px;
         font-weight: 300;
+        font-size: 1.1rem;
+    }
+    @include breakpoints(tablet){
+        font-size: 1.2rem;
     }
     @include breakpoints(tablet){
         font-size: 1.2rem;

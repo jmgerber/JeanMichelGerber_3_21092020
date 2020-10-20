@@ -1,5 +1,5 @@
 .restaurants{
-    padding: 55px 20px 60px;
+    padding: 55px 20px 45px;
     @include gray-background;
     h2{
         margin-bottom: 22px;
@@ -8,6 +8,12 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        .restaurants-tab{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
         h2{
             font-size: 1.9rem;
             margin-bottom: 30px;
@@ -22,12 +28,6 @@
             }
         }
     }
-}
-
-.restaurants-tab{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .resto-prev{

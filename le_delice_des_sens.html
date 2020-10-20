@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/prefixed/style.css">
     <script src="https://kit.fontawesome.com/41d90e6780.js" crossorigin="anonymous"></script>
     <title>ohmyfood - Le délice des sens</title>
 </head>
@@ -20,107 +20,113 @@
                 <i class="far fa-heart emptyHeart"><i class="fas fa-heart fullHeart"></i></i>
             </div>
 
-            <h3>Entrées</h3>
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Tartare de thon</p>
-                    <p>Assaisonné au yuzu</p>
+            <section class="sub-menu">
+                <h3>Entrées</h3>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Tartare de thon</p>
+                        <p>Assaisonné au yuzu</p>
+                    </div>
+                    <div class="dishes__price">25€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">25€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>
 
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Bouchée de homard croustillant </p>
-                    <p>Et sa farandole de petits légumes</p>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Bouchée de homard croustillant </p>
+                        <p>Et sa farandole de petits légumes</p>
+                    </div>
+                    <div class="dishes__price">35€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">35€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>
 
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Velouté de cèpes</p>
-                    <p>Aux truffes</p>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Velouté de cèpes</p>
+                        <p>Aux truffes</p>
+                    </div>
+                    <div class="dishes__price">20€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">20€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>
+            </section>
 
-            <h3>Plats</h3>
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Poulet rôti aux herbes de Provence</p>
-                    <p>Et sa crème de truffe</p>
+            <section class="sub-menu">
+                <h3>Plats</h3>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Poulet rôti aux herbes de Provence</p>
+                        <p>Et sa crème de truffe</p>
+                    </div>
+                    <div class="dishes__price">40€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">40€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>
 
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Langouste rôtie </p>
-                    <p>Et ses légumes de saison</p>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Langouste rôtie </p>
+                        <p>Et ses légumes de saison</p>
+                    </div>
+                    <div class="dishes__price">35€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">35€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>
 
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Côte de boeuf Angus</p>
-                    <p>Et sa purée de panais</p>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Côte de boeuf Angus</p>
+                        <p>Et sa purée de panais</p>
+                    </div>
+                    <div class="dishes__price">44€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">44€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>     
+            </section> 
             
-            <h3>Desserts</h3>
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Farandole de desserts</p>
-                    <p>Du chef</p>
+            <section class="sub-menu">
+                <h3>Desserts</h3>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Farandole de desserts</p>
+                        <p>Du chef</p>
+                    </div>
+                    <div class="dishes__price">18€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">18€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>
 
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Crème brulée</p>
-                    <p>Revisitée</p>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Crème brulée</p>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="dishes__price">22€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">22€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>
 
-            <div class="dishes flex">
-                <div class="dishes__text">
-                    <p class="dish_name">Tiramisu</p>
-                    <p>À la noisette</p>
+                <div class="dishes flex">
+                    <div class="dishes__text">
+                        <p class="dish_name">Tiramisu</p>
+                        <p>À la noisette</p>
+                    </div>
+                    <div class="dishes__price">23€</div>
+                    <div class="check__animation">
+                        <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
+                    </div>
                 </div>
-                <div class="dishes__price">23€</div>
-                <div class="check__animation">
-                    <div class="anim_icon"><i class="fas fa-check-circle"></i></div>
-                </div>
-            </div>
+            </section>
             
             <button class="btn">Commander</button>
         </section>
