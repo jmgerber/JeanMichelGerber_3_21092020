@@ -6,7 +6,7 @@
     background-color: darken($gray-color, $scale);
 }
 
-@mixin transition-timing-check($type){
+@mixin check-transition-timing($type){
     transition: $type 300ms 100ms linear;
 }
 
