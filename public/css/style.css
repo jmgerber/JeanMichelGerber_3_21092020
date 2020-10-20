@@ -303,6 +303,11 @@ footer a i {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 600px) {
+  .presentation {
+    font-size: 1.2rem;
+  }
+}
 
 .localisation {
   height: 50px;
@@ -325,6 +330,25 @@ footer a i {
 .operation {
   padding: 50px 20px 65px;
 }
+@media screen and (min-width: 600px) {
+  .operation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .operation h2 {
+    font-size: 1.9rem;
+  }
+  .operation h2::before, .operation h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #9356DC;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
 .operation h2 {
   margin-bottom: 30px;
 }
@@ -346,6 +370,22 @@ footer a i {
     width: 75px;
     vertical-align: middle;
     margin: 0 10px;
+  }
+}
+
+.operations-tab {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .operations-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .operations-tab {
+    flex-direction: row;
   }
 }
 
