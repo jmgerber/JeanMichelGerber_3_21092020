@@ -36,7 +36,7 @@
 }
 
 @mixin restaurant-bg-picture($resto) {
-    background: url('../images/restaurants/#{map-get($images-resto, $resto)}') center/cover;
+    background: url('../../images/restaurants/#{map-get($images-resto, $resto)}') center/cover;
 }
 
 @mixin breakpoints($min-device) {
