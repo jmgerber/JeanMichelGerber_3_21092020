@@ -94,7 +94,7 @@
         align-items: center;
         font-size: 1rem;
         font-weight: 600;
-        @include shadow_box;
+        @include shadow-box;
         i{
             width: 21px;
             color: #7D7D7D;

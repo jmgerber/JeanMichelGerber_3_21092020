@@ -36,7 +36,7 @@
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: 18px;
-    @include shadow_box;
+    @include shadow-box;
     &__image{
         height: 70%;
         position: relative;
