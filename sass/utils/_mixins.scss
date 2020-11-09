@@ -1,4 +1,4 @@
-@mixin shadow_box($color: darken($gray-color, 20%)) {
+@mixin shadow-box($color: darken($gray-color, 20%)) {
     box-shadow: 0 3px 8px $color;
 }
 

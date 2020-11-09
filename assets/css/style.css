@@ -281,20 +281,20 @@ footer a i {
   }
 }
 
-.localisation {
+.location {
   height: 50px;
   background-color: #ebebeb;
-  color: #373737;
-  box-shadow: inset 0 5px 4px -2px #ccc;
+  color: #363636;
+  box-shadow: inset 0 5px 4px -2px #cccccc;
 }
-.localisation i {
+.location i {
   margin-right: 15px;
 }
-.localisation p {
+.location p {
   margin: auto;
 }
 @media screen and (min-width: 600px) {
-  .localisation {
+  .location {
     font-size: 1.2rem;
   }
 }
